@@ -6,7 +6,21 @@ This is a basic boilerplate for you to configure, with a Vagrant configuration t
 
 ## Demonstration with Vagrant
 
-Let's get started with a Vagrant demonstration:
+Currently I'm using a Vagrant box I found on [vagrantbox.es/](http://www.vagrantbox.es/), chosen because it was one of the smallest with puppet already installed.
+
+Until I make my own one, the following steps are required to get it to work:
+```
+vagrant up
+vagrant ssh
+#A hacky way to get the default vagrant user to work for everything
+sudo adduser vagrant root
+sudo apt-get update
+sudo apt-get install git -y
+#Create a public key and add it to github in some way...
+sudo useradd -s /bin/false nginx
+```
+
+Ideally, you'd only have to run the following steps:
 
 ```
 bundle install
@@ -22,3 +36,4 @@ This does a bundle install of the gems required, boots up the vagrant box, runs 
 * Make my own custom Vagrant box for demonstrating the repo
 * More configuration
 * Add some puppet-specs, possible add [server specs](http://serverspec.org/) as well...
+
