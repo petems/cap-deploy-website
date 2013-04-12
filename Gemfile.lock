@@ -1,8 +1,8 @@
 GIT
-  remote: git@github.com:simplybusiness/capistrano-ext-puppetize.git
-  revision: bfeb40141e511450a41d134bd1569b424db4d19c
+  remote: git@github.com:petems/capistrano-ext-puppetize-petems.git
+  revision: 559e19d9f0fefb19cb7effcb14fb7a6c965b3b74
   specs:
-    capistrano-ext-puppetize (0.3.1)
+    capistrano-ext-puppetize-petems (0.4.2)
       capistrano (>= 2.0.0)
       capistrano-ext
 
@@ -25,12 +25,10 @@ GEM
     net-ssh (2.6.7)
     net-ssh-gateway (1.2.0)
       net-ssh (>= 2.6.5)
-    rake (10.0.4)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   capistrano
-  capistrano-ext-puppetize!
-  rake
+  capistrano-ext-puppetize-petems!

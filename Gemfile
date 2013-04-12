@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
 gem 'capistrano'
-gem 'capistrano-ext-puppetize', git: 'git@github.com:simplybusiness/capistrano-ext-puppetize.git', require: false
+gem 'capistrano-ext-puppetize-petems', git: 'git@github.com:petems/capistrano-ext-puppetize-petems.git', require: false
