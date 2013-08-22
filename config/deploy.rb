@@ -16,6 +16,8 @@ set :scm, :git
 
 set :owner, ENV['USER']
 
+depend :remote, :command, "puppet"
+
 before 'deploy', 'deploy:check'
 
 set :app_host_name, "cap-deploy-website"
