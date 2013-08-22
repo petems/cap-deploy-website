@@ -3,10 +3,7 @@ require 'capistrano/ext/multistage'
 
 set :application, "cap-deploy-website"
 
-set :ssh_private_key, File.expand_path("#{ENV['HOME']}/.ssh/id_rsa")
-set :ssh_options,{keys: fetch(:ssh_private_key), forward_agent: true}
-
-set :repository,  "git@github.com:petems/cap-deploy-website.git"
+set :repository,  "https://github.com/petems/cap-deploy-website/"
 
 set :default_stage, "vagrant"
 set :stages, %w(vagrant staging production)
